@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.testng.Assert;
+import org.testng.Assert;
 
 public class login {
 	public static void main(String[] args) throws InterruptedException {
@@ -31,12 +32,12 @@ public class login {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement loginbutton = driver.findElement(By.xpath("//button[@id='signin_btn']"));
 		js.executeScript("arguments[0].click();", loginbutton);
-//		WebElement until = wait.until(ExpectedConditions.elementToBeClickable(loginbutton));
-//		act.moveToElement(until).click();
-//		String explore = driver.findElement(By.xpath("//a[text()='Explore']")).getText();
-//		System.out.println(explore);
-//		Assert.assertEquals(explore, "Explore");
-//		System.out.println("finished");
+		WebElement until = wait.until(ExpectedConditions.elementToBeClickable(loginbutton));
+		act.moveToElement(until).click();
+		String explore = driver.findElement(By.xpath("//a[text()='Explore']")).getText();
+		System.out.println(explore);
+		Assert.assertEquals(explore, "Explore");
+		System.out.println("finished");
 		System.out.println("login");
 		
 
