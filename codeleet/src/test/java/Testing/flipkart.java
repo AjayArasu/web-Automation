@@ -56,7 +56,5 @@ public class flipkart {
 		File frst = driver.getScreenshotAs(OutputType.FILE);
 		File dest = new File("/home/pando-ajay/Documents/snaps/image.png");
 		FileHandler.copy(frst, dest);
-		///span[@class='supplier-productSellerName']
-		
 		}
 }
