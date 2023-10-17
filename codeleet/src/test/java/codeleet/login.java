@@ -2,6 +2,7 @@ package codeleet;
 
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -13,9 +14,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.testng.Assert;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class login {
-	public static void main(String[] args) throws InterruptedException {
+	
+	@Test
+	public void leet() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/home/pando-ajay/Documents/chromedriver_linux64/chromedriver");
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--disable-notification");
@@ -40,8 +44,6 @@ public class login {
 		System.out.println("finished");
 		System.out.println("login");
 		
-
-	
 	}
 	
 }
