@@ -1,6 +1,8 @@
 package codeleet;
 
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.JavascriptException;
@@ -40,7 +42,7 @@ public class login {
 		act.moveToElement(until).click();
 		String explore = driver.findElement(By.xpath("//a[text()='Explore']")).getText();
 		System.out.println(explore);
-		Assert.assertEquals(explore, "Explore");
+		AssertJUnit.assertEquals(explore, "Explore");
 		System.out.println("finished");
 		System.out.println("login");
 		

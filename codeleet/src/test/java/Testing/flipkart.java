@@ -23,9 +23,12 @@ import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 public class flipkart {
-	public static void main(String[] args) throws AWTException, IOException {
+	
+	@Test
+	public void main() throws AWTException, IOException {
 		System.setProperty("webdriver.chrome.driver", "/home/pando-ajay/Documents/chromedriver_linux64/chromedriver");
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--disable-notifications");
